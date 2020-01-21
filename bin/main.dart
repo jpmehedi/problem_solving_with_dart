@@ -1,20 +1,15 @@
-//Program to find area and circumference of circle.
+//Program to convert temperature from degree centigrade to Fahrenheit vise a versa
 import 'dart:io';
 import 'dart:math';
+void main (){
 
-void main(){
-
-  print("Enter Circle Radius:");
+  print("Enter value:");
   var inputValue = stdin.readLineSync();
-  double radius = double.parse( inputValue);
+  double c = double.parse( inputValue);
 
-  double area = 3.141*(radius*radius);
-  print("Area is: $area");
-
-  double circumference = 2*3.141*radius;
-  print('Circunmference is :$circumference');
-
-  double diameter = 2*radius;
-  print('Diameter is :$diameter');
+  double fahrenheit = c*(9/5)+32;
+  print("$fahrenheit F");
+  double centrigrade = (fahrenheit-32)*5/9;
+  print('$centrigrade C');
 
 }
