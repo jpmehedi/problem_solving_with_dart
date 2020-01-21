@@ -1,12 +1,20 @@
-//Write a dart program used escape sequence.
+//Program to find area and circumference of circle.
 import 'dart:io';
+import 'dart:math';
 
 void main(){
-  //used \n for new line
-  //used \t for new tab
-  //used \\ for single slash
-  //used '' for quiet  for text
 
-  print("I am Mehedi hasan\nI read in  BSc in 'computer' science\t and engineering. I am come "
-      "from '\\'chandpur");
- }
+  print("Enter Circle Radius:");
+  var inputValue = stdin.readLineSync();
+  double radius = double.parse( inputValue);
+
+  double area = 3.141*(radius*radius);
+  print("Area is: $area");
+
+  double circumference = 2*3.141*radius;
+  print('Circunmference is :$circumference');
+
+  double diameter = 2*radius;
+  print('Diameter is :$diameter');
+
+}
