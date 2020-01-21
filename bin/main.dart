@@ -5,6 +5,7 @@ import 'dart:math';
 void main(){
   double math,dataStructure,algorithm,programming,database, per;
   int  total=500;
+  
 
   print("Input Math:");
   math = double.parse(stdin.readLineSync());
