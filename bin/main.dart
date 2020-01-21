@@ -1,12 +1,18 @@
-//Write a C program additing two integer Given User Value:
+//Write a C program adding two integer by user:
+import 'dart:io';
 
-void main(){
-  int a = 10;
-  int b = 20;
+void main (){
+  print("Enter First value:\n");
+  //Above line for user input
+  var  fvalue = stdin.readLineSync();
 
-  int add = a + b;
+  print('Enter the second value:\n');
+  //Above line for user input
+  var svalue = stdin.readLineSync();
+  //int.parse() use for type casting sting to int
+  int sum = int.parse(fvalue) + int.parse(svalue);
 
-  //Where $ sign used to separate variable name in string in print statement
-  print('The sum of two intiger value:$add');
+  print('Output: $sum');
+
 
 }
