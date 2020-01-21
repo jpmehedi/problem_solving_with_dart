@@ -1,18 +1,33 @@
-//Write a C program adding two integer by user:
+//Using if  statement s, relational operators and equalities operator.
 import 'dart:io';
 
 void main (){
-  print("Enter First value:\n");
-  //Above line for user input
-  var  fvalue = stdin.readLineSync();
+  print("Enter Number One :\n");
+  var n1 = stdin.readLineSync();
+  //type casting
+  int numberOne = int.parse(n1);
 
-  print('Enter the second value:\n');
-  //Above line for user input
-  var svalue = stdin.readLineSync();
-  //int.parse() use for type casting sting to int
-  int sum = int.parse(fvalue) + int.parse(svalue);
+  print("Enter Number Two: \n");
+  var n2 = stdin.readLineSync();
+  int numberTwo = int.parse(n2);
 
-  print('Output: $sum');
-
+  if(numberOne == numberTwo){
+    print("Number is equal\n");
+  }
+  if (numberOne != numberTwo){
+    print("Number is not eaual");
+  }
+  if(numberOne < numberTwo){
+    print("Number one is smaller then number two");
+  }
+  if(numberOne > numberTwo){
+    print("Number one is gratter then number two");
+  }
+  if(numberOne >= numberTwo){
+    print("Number one is Greater than or equal to number two");
+  }
+  if(numberOne <= numberTwo){
+    print("Number one is smaller then or equal to number two");
+  }
 
 }
