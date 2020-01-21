@@ -1,10 +1,12 @@
-//A Simple dart Program: Printing a Line of Text.
+//Write a C program additing two integer Given User Value:
 
-void main (){
+void main(){
+  int a = 10;
+  int b = 20;
 
-  print('The quick brown fox jumps over the lazy dog\n');
-  //where  \n print new line of this code
-  print('I love Japan!\n');
+  int add = a + b;
+
+  //Where $ sign used to separate variable name in string in print statement
+  print('The sum of two intiger value:$add');
 
 }
-
