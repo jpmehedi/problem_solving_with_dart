@@ -1,25 +1,17 @@
-//Program to calculate sum of 5 subjects and find percentage.
+//Program to show swap of two no’s without using third variable.
 import 'dart:io';
-import 'dart:math';
 
 void main(){
-  double math,dataStructure,algorithm,programming,database, per;
-  int  total=500;
-  
 
-  print("Input Math:");
-  math = double.parse(stdin.readLineSync());
-  print("Input Data Structure:");
-  dataStructure = double.parse(stdin.readLineSync());
-  print("Input Algorithm:");
-  algorithm = double.parse(stdin.readLineSync());
-  print("Input Programming:");
-  programming = double.parse(stdin.readLineSync());
-  print("Input Database:");
-  database = double.parse(stdin.readLineSync());
-  double sumAllSub = math + database + algorithm + programming + database;
-
-  per = (sumAllSub*100)/500;
-  print('Persent mark: $per');
-
+  print('Enter value of a:');
+  var a = int.parse(stdin.readLineSync());// 5
+  print('Enter value of b:');
+  var b = int.parse(stdin.readLineSync());// 7
+  a = a + b;// 5+7=12=a
+  b = a - b;// 12-7=5=b
+  a = a - b;// 12-5=7=a
+  print('after Swap  we get value of a:$a');
+  print('after swap we get value of b:$b');
 }
+
+
