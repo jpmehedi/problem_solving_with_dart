@@ -1,24 +1,21 @@
-//Program to find greatest in 3 numbers.
+//Program to show the greater number used ternary operator.
+
 import 'dart:io';
 
 void main(){
 
-  print("Enter First Value:");
+  print('Enter First Value:');
   var numberOne = int.parse(stdin.readLineSync());
-  print("Enter Second Value:");
+  print('Enter Second Value:');
   var numberTwo = int.parse(stdin.readLineSync());
-  print("Enter Thrid Value:");
-  var numberThree = int.parse(stdin.readLineSync());
+  //condition ? value_if_true : value_if_false
+  /*Programmers use ternary operators in C for decision making inplace of
+  conditional statements if and else. */
 
-  if((numberOne > numberTwo)&&(numberOne >numberThree)){
-    print('Number One is Gratter');
-  }else if((numberTwo > numberOne)&&(numberTwo > numberThree)){
-    print('Number two is Gratter');
-  }else if((numberThree > numberOne)&&(numberThree >numberTwo)){
-    print('Number three is gratter');
-  }
+  (numberOne > numberTwo)? print('Number one is greatter!'):print('Number two is greater');
 
 
 
 }
+
 
