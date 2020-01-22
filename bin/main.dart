@@ -1,21 +1,19 @@
-//Program to show the greater number used ternary operator.
-
+//Program to find that entered year is leap year or not.
 import 'dart:io';
 
 void main(){
+  print('Enter Any Year:');
+  var year = int.parse(stdin.readLineSync());
 
-  print('Enter First Value:');
-  var numberOne = int.parse(stdin.readLineSync());
-  print('Enter Second Value:');
-  var numberTwo = int.parse(stdin.readLineSync());
-  //condition ? value_if_true : value_if_false
-  /*Programmers use ternary operators in C for decision making inplace of
-  conditional statements if and else. */
-
-  (numberOne > numberTwo)? print('Number one is greatter!'):print('Number two is greater');
-
-
+  if( year % 4 == 0){
+    if(year % 100 == 0){
+      if(year % 400 == 00){
+        print('$year is leap year');
+      }else {print('$year is not leap year');}
+    }else{ print('$year is leap year');}
+  }else{print('$year is not leap year');}
 
 }
+
 
 
