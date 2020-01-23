@@ -1,28 +1,30 @@
-//Program to display arithmetic operator using switch case.
+//Program to use switch statement. Display Monday to Sunday.
 import 'dart:io';
 import 'dart:math';
 
 void main(){
-
-  print('Enter The First  Number:');
-  var numberOne = int.parse(stdin.readLineSync());
-  print('Enter The Scond Number:');
-  var numberTwo = int.parse(stdin.readLineSync());
+  print('A for Sturday \n B for Sunday \n C for Monday \n D for Tuseday');
   print('Enter The Switch No:');
-  var switchNo = int.parse(stdin.readLineSync());
+  var switchNo =(stdin.readLineSync());
   switch(switchNo){
-    case 1:
-      print(numberOne + numberTwo);
+    case 'a':
+    case 'A':
+      print('Day is Saturday!');
       break;
-    case 2:
-      print(numberOne - numberTwo);
+    case 'b':
+    case 'B':
+      print('Day is Sunday!');
       break;
-    case 3:
-      print(numberOne * numberTwo);
+    case 'c':
+    case 'C':
+      print('Day is Monday!');
       break;
-    case 4:
-      print(numberOne * numberTwo);
-}
+    case 'd':
+    case 'D':
+      print('Day is tuseday!');
+      break;
+    default: print('Pressed wrong key');
+  }
 
 
 
