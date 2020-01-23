@@ -1,17 +1,16 @@
-//Program to find that entered year is leap year or not.
+//Program to find whether given no. is even or odd.
+
 import 'dart:io';
 
 void main(){
-  print('Enter Any Year:');
-  var year = int.parse(stdin.readLineSync());
+  print('Enter  the any number:');
+  var number = int.parse(stdin.readLineSync());
 
-  if( year % 4 == 0){
-    if(year % 100 == 0){
-      if(year % 400 == 00){
-        print('$year is leap year');
-      }else {print('$year is not leap year');}
-    }else{ print('$year is leap year');}
-  }else{print('$year is not leap year');}
+  if(number % 2 == 0){
+    print('Number is Even');
+  }else{
+    print('Number is odd');
+  }
 
 }
 
